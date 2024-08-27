@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./imagenes/Logo.png" alt="logo de alura">
+    </header>
+    <main class="presentacion">
+        <section class="presentacion_seccion1">
+            <textarea id="texto" class="presentacion_seccion1_texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="presentacion_seccion1_advertencia">
+                <img src="./imagenes/exclamacion.png" alt="imagen de exclamacion">
+                <p>Solo letras minusculas y sin acento</p>
+            </div>
+            <div class="presentacion_seccion1_enlaces">
+                <button onclick="encriptar();" class="presentacion_seccion1_enlaces_encriptar">Encriptar</button>
+                <button onclick="desencriptar();" class="presentacion_seccion1_enlaces_desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="presentacion_seccion2">
+            <textarea id="resultado" class="presentacion_seccion2_texto" cols="30" rows="10" style="display:none;"></textarea>
+            <div id="mensaje" class="presentacion_seccion2_mensaje">                    
+                    <img class="presentacion_seccion2_imagen" src="./imagenes/Muneco.png" alt="niño con una lupa">                
+                    <h2 class="presentacion_seccion2_subtitulo">Ningún mensaje fue encontrado</h2>                            
+                    <p class="presentacion_seccion2_advertencia">ingresa el texto que desees encriptar o desencriptar</p>                
+            </div>            
+            <button id="copiarBtn" onclick="copiar();" class="presentacion_seccion2_enlaces_copiar" style="display:none;">Copiar</button>                        
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por LuisEdo</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
